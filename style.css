@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Sono:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +60,7 @@ form{
 h2{
     text-align: center;
     font-size: 2.5em;
+    font-family: 'Rubik Iso', cursive;
 }
 
 .inputbox{
@@ -74,6 +76,7 @@ h2{
     border-bottom: 1px solid;
     outline: none;
     font-size: 1.1em;
+    font-family: 'Sono', sans-serif;
 }
 
 ::placeholder{
@@ -101,19 +104,22 @@ button{
     border-radius: 20px;
     border: none;
     font-size: 1.1em;
+    font-family: 'Sono', sans-serif;
+    font-weight: 500;
 }
 
 button:hover{
-    color: #0c1022;
+    color: #fff;
     background: #00ccff;
 }
 
 .forget{
     display: flex;
     justify-content: space-between;
+    font-size: 0.9em;
+    font-family: 'Sono', sans-serif;
 }
 
 .forget a:hover{
     text-decoration: underline;
-
 }
