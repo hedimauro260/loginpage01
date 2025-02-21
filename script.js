@@ -1,23 +1,14 @@
 const password = document.querySelector('.password');
-const mostrar = document.querySelector('#show');
-const ocultar = document.querySelector('#hide')
+const showBtn = document.querySelector('#show');
+const hideBtn = document.querySelector('#hide');
 
-function eyeclick() {
-    let inputTypeIsPasseord = password.type == "password"
-
-    if (inputTypeIsPasseord) {
-        showPassword()
-    } else{
-        hidePassword()
-    }
+function togglePassword() {
+    const isPassword = password.type === "password";
+    password.type = isPassword ? "text" : "password";
+    hideBtn.style.display = isPassword ? "inline" : "none";
 }
 
-function showPassword() {
-    password.setAttribute("type", "text")
-    ocultar.style.display = 'inline'
-}
-
-function hidePassword() {
-    password.setAttribute("type", "password")
-    ocultar.style.display = 'none'
-}
+// Event Listener for Show Button
+showBtn.addEventListener('click', togglePassword);
+// Event Listener for Hide Button
+hideBtn.addEventListener('click', togglePassword);
